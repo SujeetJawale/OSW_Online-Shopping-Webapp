@@ -1,0 +1,11 @@
+
+{% extends 'shop/basics.html' %}
+{% block title %}Track Order{% endblock %}
+{% block body %}
+{% if chart %}
+<img src="data:image/png;base64, {{chart|safe}}">
+  {% endif %}
+{% if chart1 %}
+<img src="data:image/png;base64, {{chart1|safe}}">
+  {% endif %}
+{% endblock %}

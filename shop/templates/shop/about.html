@@ -1,0 +1,112 @@
+{% extends 'shop/basics.html' %}
+{% block title %}About Us{% endblock %}
+{% block css %}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+.button:hover, a:hover {
+  opacity: 0.7;
+}
+
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+{% endblock %}
+{% block body %}
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>Some text about who we are and what we do.</p>
+  <p>Resize the browser window to see that this page is responsive by the way.</p>
+</div>
+
+<div class="container">
+    <div class="title py-5 pd-5">
+        <h2 style="text-align:center">WHO I AM</h2>
+    </div>
+    <div class="card">
+      <img src="https://lh3.googleusercontent.com/lJwTWL78PgnXQQI1jGna7lsXquNP_Mb1U2ZmrAlvdg2O8oNSCDLZXSpZ90ubdX9XuasxxciONhwuxdogVqFZLHyn928iOdjaH4zvh-_mo8DYFxPxWhUaGGCEbfmE4Tp_lx4dPzVuU11CGKqeooVb1PcIE41gbVCPV28g7S7VZVshDrnYejY7bA6NQ-fxeLV0WMQuX2nlQul7fycsy1uEtHQJcTsiNWPFkFbrwUObV5eK9mgunFcG1jb_pCOyiVuIle_lPU4Rku82udgZ77jy8ySUYPyvWRvQD1lKS7Qm-k6FhbSnOnFbGrsZsKfuu7BUZNtXU25vKKxLrmjEWjNJ0LZbx-KGJhBvKbRnqXgrFm0OV2r63msFYfhTW8zT4LoiwL2hPcpA-2a-EFRdXYuUPzBFlrnYaIKXR6nzmW5HmNo0iTFRruHWI8b31GWyjVcrLfZd7A8-RNCu6zCkqRa28IEfsYadXeCIVcLrnC98yKOtD-1ZRwafKK77U_ZUzbE7pKCADW3L4tr2D5NDBlP8Iwyo0_Jwq_Xx_TtwoSRhvV6QnE2mq9U11hSp-gJs0bnTSEA7iHFy2LrFy3e7tkF5AfnyNrwQHmkMv9LtWZUN772FYn_uQfpSVfkgzzQM1AEmVhSRQhlVzGSK7YZa-HjF4ZEV8SFOgovIcslrSX9QVxLozunC0I5QkxtZwCEK=w602-h657-no?authuser=2" alt="Devendra" style="width:100%">
+      <h1>Devendra Patil</h1>
+      <p class="title">Web App Developer</p>
+      <p>PCCOE,Nigdi</p>
+      <a href="https://github.com/dev-deven"><i class="fa fa-github text-dark"></i></a>
+      <a href="mailto:devendrapatil1027@gmail.com"><i class="fa fa-envelope text-dark"></i></a>
+      <a  href="https://www.linkedin.com/in/devendra-patil-a90b991a0/"><i class="fa fa-linkedin text-dark"></i></a>
+      <a href="https://www.facebook.com/devendra.patil.37454"><i class="fa fa-facebook text-dark"></i></a>
+     
+      <p><button  href="https://dev-deven.github.io/Portfolio-2.0/">Contact</button></p>
+    </div>
+
+</div>
+{% endblock %}
